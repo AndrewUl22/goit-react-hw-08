@@ -28,7 +28,7 @@ const slice = createSlice({
           (contact) => contact.id !== action.payload
         );
       })
- .addCase(logout.fulfilled, state => {
+ .addCase(logOut.fulfilled, state => {
         state.items = [];
         state.isLoading = false;
         state.error = null;
